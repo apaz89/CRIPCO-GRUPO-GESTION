@@ -13,10 +13,10 @@ namespace CRIPCO.BD
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CripcoEntities : DbContext
+    public partial class GCEntities : DbContext
     {
-        public CripcoEntities()
-            : base("name=CripcoEntities")
+        public GCEntities()
+            : base("name=GCEntities")
         {
         }
     

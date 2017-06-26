@@ -880,7 +880,7 @@
           <End Type="GCModel.AspNetRole" Role="AspNetRole" Multiplicity="*" />
           <End Type="GCModel.AspNetUser" Role="AspNetUser" Multiplicity="*" />
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>

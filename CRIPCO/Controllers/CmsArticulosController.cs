@@ -55,7 +55,7 @@ namespace CRIPCO.Controllers
 
             foreach (var item in headerTree)
             {
-                root_li += "<li role=\"treeitem\" aria-selected=\"false\" aria -level=\"" + level + "\" aria -labelledby=\"j1_11_anchor\" id =\"j1_11\" class=\"jstree - node  jstree - leaf jstree - last\" >";
+                root_li += "<li role=\"treeitem\" aria-selected=\"false\" aria -level=\"" + level + "\" aria -labelledby=\"j1_11_anchor\" id =\"j1_11\" class=\"jstree - node  jstree - leaf jstree - last\">";
 
                 if (item.Tipo.Trim() == "M")
                 {
@@ -64,7 +64,7 @@ namespace CRIPCO.Controllers
                 }
                 else
                 {
-                    root_li += " <a class=\"jstree -anchor\" href=\"/CmsArticulos/Edit/" + item.ArticuloId + "\" tabindex=\"-1\" id=\"j1_10_anchor\" >" +
+                    root_li += " <a class=\"jstree -anchor\" href=\"/CmsArticulos/Edit/" + item.ArticuloId + "\" tabindex=\"-1\" id=\"j1_10_anchor\">" +
                          "<i class=\"jstree -icon jstree-themeicon fa fa-link fa-lg text-primary jstree-themeicon-custom\" role =\"presentation\" ></i>" +
                              item.ArticuloName + "</a>";
                 }
@@ -75,7 +75,7 @@ namespace CRIPCO.Controllers
                     RecursiveLectura(ref root_li, ref level, item.Children);
                     root_li += "</ul>";
                 }
-                root_li += "</ li >";
+                root_li += "</li>";
             }
         }
 
@@ -144,7 +144,7 @@ namespace CRIPCO.Controllers
         }
 
         #endregion
-        private CripcoEntities db = new CripcoEntities();
+        private GCEntities db = new GCEntities();
 
         public string Descripcion { get; private set; }
 
