@@ -144,7 +144,7 @@ namespace CRIPCO.Controllers
         }
 
         #endregion
-        private GCEntities db = new GCEntities();
+        private Entities db = new Entities();
 
         public string Descripcion { get; private set; }
 
