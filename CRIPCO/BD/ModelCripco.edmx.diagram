@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9ace53b8834c45369a397f04e8bdfdfb" Name="Diagram1">
+        <EntityTypeShape EntityType="GCModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GCModel.Area" Width="1.5" PointX="3" PointY="15.25" />
+        <EntityTypeShape EntityType="GCModel.AspNetRole" Width="1.5" PointX="0.75" PointY="8.25" />
+        <EntityTypeShape EntityType="GCModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="11.75" />
+        <EntityTypeShape EntityType="GCModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="9.125" />
+        <EntityTypeShape EntityType="GCModel.AspNetUser" Width="1.5" PointX="3" PointY="7" />
+        <EntityTypeShape EntityType="GCModel.Cita" Width="1.5" PointX="9.75" PointY="5" />
+        <EntityTypeShape EntityType="GCModel.CmsArticulo" Width="1.5" PointX="9.75" PointY="0.875" />
+        <EntityTypeShape EntityType="GCModel.CmsArticulosDetalle" Width="1.5" PointX="12" PointY="1" />
+        <EntityTypeShape EntityType="GCModel.Especialidad" Width="1.5" PointX="5.25" PointY="1.25" />
+        <EntityTypeShape EntityType="GCModel.Expediente" Width="1.5" PointX="12" PointY="5" />
+        <EntityTypeShape EntityType="GCModel.Horario" Width="1.5" PointX="7.5" PointY="4.75" />
+        <EntityTypeShape EntityType="GCModel.Persona" Width="1.5" PointX="5.25" PointY="4.5" />
+        <EntityTypeShape EntityType="GCModel.PersonaEspecialidad" Width="1.5" PointX="7.5" PointY="1.5" />
+        <EntityTypeShape EntityType="GCModel.Sala" Width="1.5" PointX="5.25" PointY="15" />
+        <EntityTypeShape EntityType="GCModel.sysdiagram" Width="1.5" PointX="0.75" PointY="3.75" />
+        <AssociationConnector Association="GCModel.FK_Sala_Area" />
+        <AssociationConnector Association="GCModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="GCModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="GCModel.FK_Persona_AspNetUsers" />
+        <AssociationConnector Association="GCModel.FK_Cita_Horario" />
+        <AssociationConnector Association="GCModel.FK_Cita_Persona" />
+        <AssociationConnector Association="GCModel.FK_Expediente_Cita" />
+        <AssociationConnector Association="GCModel.FK_CmsArticulosDetalle_CmsArticulos" />
+        <AssociationConnector Association="GCModel.FK_PersonaEspecialidad_Especialidad" />
+        <AssociationConnector Association="GCModel.FK_Horario_Persona" />
+        <AssociationConnector Association="GCModel.FK_Horario_Sala" />
+        <AssociationConnector Association="GCModel.FK_PersonaEspecialidad_Persona" />
+        <AssociationConnector Association="GCModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
